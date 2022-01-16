@@ -103,10 +103,12 @@ header {
 }
 
 .carousel_section {
-  background-image: url("../../images/carousel_banner.png");
   height: 500px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  width: 35%;
+  width: 475px;
+  padding: 0px 30px;
+}
+
+.carousel_section img {
+  width: 100%;
+  height: 460px;
 }

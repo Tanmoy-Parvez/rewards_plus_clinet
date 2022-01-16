@@ -3,8 +3,21 @@ import "./Delivery.css"
 import logo from '../../images/logo.png'
 import location_icon from '../../images/location.png'
 import Services from '../Services/Services';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import banner1 from '../../images/carousel_banner.png'
+
+
 
 const Delivery = () => {
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    };
     return (
         <div className="container">
             <div className="banner">
@@ -35,9 +48,18 @@ const Delivery = () => {
                     </div>
                 </div>
                 <div className="carousel_section">
-
+                    <Slider {...settings}>
+                        <div>
+                            <img src={banner1} alt="" />
+                        </div>
+                        <div>
+                            <h3>2</h3>
+                        </div>
+                        <div>
+                            <h3>3</h3>
+                        </div>
+                    </Slider>
                 </div>
-
             </div>
             <Services />
         </div>
