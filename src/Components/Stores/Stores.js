@@ -1,8 +1,8 @@
 import React from 'react';
 import "./Stores.css"
 import logo from '../../images/logo.png'
-import storeImg from '../../images/store.png'
 import location_icon from '../../images/location.png'
+import Store from '../Store/Store';
 
 const fakeData = [
     {
@@ -73,16 +73,7 @@ const Stores = () => {
                     <div className="stores_card">
                         {
                             fakeData.map(store =>
-                                <div className="cards">
-                                    <div className="card_img">
-                                        <img src={storeImg} alt="" />
-                                    </div>
-                                    <div className="card_body">
-                                        <h3>{store?.name} <span className="blue_text">{store?.distance}</span></h3>
-                                        <h3 className="ratings">{store?.star} <i className="fas fa-star"></i></h3>
-                                        <h4 className="location_details">{store?.location}</h4>
-                                    </div>
-                                </div>
+                                <Store key={store.id} store={store}></Store>
                             )
                         }
                     </div>
