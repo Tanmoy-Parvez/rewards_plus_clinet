@@ -1,0 +1,21 @@
+.services_section {
+  width: 90%;
+  margin: 50px auto;
+  margin-bottom: 50px;
+  height: 200px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+}
+
+.delivery_card {
+  text-align: center;
+}
+
+.delivery_card img {
+  width: 80px;
+}
+
+.delivery_card p {
+  color: #3f3e3e;
+}
